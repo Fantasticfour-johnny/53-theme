@@ -38,46 +38,13 @@ type AnimeTheme =
   | "fairytail"
   | "gintama"
   | "hunterxhunter"
-  | "chainsawman"
-  | "kaiju8"
-  | "drstone"
-  | "dandadan"
-  | "jujutsukaisen"
-  | "attackontitan"
-  | "fmab"
-  | "myheroacademia"
-  | "cowboybebop"
-  | "jojo"
-  | "onepunchman"
-  | "pokemon"
-  | "haikyu"
-  | "beyblade"
-  | "tokyorevengers"
-  | "windbreaker"
-  | "bakihanma"
-  | "fireforce"
-  | "foodwars"
-  | "kaguyasama"
-  | "hellsparadise"
-  | "mashle"
-  | "shangrila"
-  | "sao"
-  | "goldenkamuy"
-  | "moriarty"
-  | "eightysix"
-  | "psychopass"
-  | "mushokutensei"
-  | "slime"
-  | "nogamenolife"
-  | "sevendeadlysins"
-  | "boruto"
-  | "friendsgame"
-  | "dungeonmeshi"
-  | "parasyte"
-  | "promisedneverland"
-  | "gurrenlagann"
-  | "saikik"
-  | "highschooldxd"
+  | "bungostray"
+  | "mobpsycho"
+  | "devilmaycry"
+  | "assassinationclassroom"
+  | "tokyoghoul"
+  | "bluelock"
+  | "cyberpunk"
 
 interface ThemeConfig {
   name: string
@@ -179,23 +146,23 @@ const themes: Record<AnimeTheme, ThemeConfig> = {
     glowEffect: "shadow-red-500/40",
   },
   bleach: {
-    name: "Soul Reaper AI",
+    name: "Thousand Year Blood War AI",
     colors: {
-      primary: "blue",
-      secondary: "white",
-      accent: "cyan",
-      background: "from-blue-100 via-white/30 to-cyan-50",
-      surface: "glass-morphism border-blue-300/50 shadow-cyan-200/20",
-      text: "blue-900",
-      aiAvatar: "from-blue-600 to-cyan-700",
-      userAvatar: "blue-600",
+      primary: "red",
+      secondary: "black",
+      accent: "blue",
+      background: "from-black via-red-950/30 to-blue-950",
+      surface: "glass-morphism border-red-500/50 shadow-blue-900/20 bg-black/40",
+      text: "red-100",
+      aiAvatar: "from-red-600 to-blue-700",
+      userAvatar: "red-600",
     },
-    fonts: { heading: "font-bold", body: "font-medium" },
-    aiName: "Soul Reaper AI",
-    aiTitle: "Spiritual Intelligence",
-    placeholder: "Bankai! What spiritual power do you seek?",
+    fonts: { heading: "font-black", body: "font-bold" },
+    aiName: "Quincy War AI",
+    aiTitle: "Final Battle Intelligence",
+    placeholder: "The war has begun... What power do you seek?",
     icon: "⚔️",
-    glowEffect: "shadow-blue-400/30",
+    glowEffect: "shadow-red-500/40",
   },
   dragonball: {
     name: "Saiyan AI",
@@ -919,25 +886,6 @@ const themes: Record<AnimeTheme, ThemeConfig> = {
     icon: "⚔️",
     glowEffect: "shadow-emerald-400/30",
   },
-  boruto: {
-    name: "Boruto AI",
-    colors: {
-      primary: "blue",
-      secondary: "pink",
-      accent: "white",
-      background: "from-blue-900 via-pink-800/30 to-blue-800",
-      surface: "glass-morphism border-blue-500/50 shadow-pink-400/20",
-      text: "blue-100",
-      aiAvatar: "from-blue-600 to-pink-500",
-      userAvatar: "blue-600",
-    },
-    fonts: { heading: "font-bold", body: "font-medium" },
-    aiName: "Boruto AI",
-    aiTitle: "Next Generation Ninja",
-    placeholder: "Dattebasa! What scientific ninja tool do you need?",
-    icon: "🌀",
-    glowEffect: "shadow-blue-400/30",
-  },
   friendsgame: {
     name: "Yuuichi AI",
     colors: {
@@ -1070,6 +1018,196 @@ const themes: Record<AnimeTheme, ThemeConfig> = {
     placeholder: "Boost! What power do you seek, partner?",
     icon: "🐉",
     glowEffect: "shadow-red-400/30",
+  },
+  gachiakuta: {
+    name: "Trash Beast AI",
+    colors: {
+      primary: "amber",
+      secondary: "orange",
+      accent: "red",
+      background: "from-amber-900 via-orange-800/30 to-red-900",
+      surface: "glass-morphism border-amber-500/50 shadow-orange-400/20",
+      text: "amber-100",
+      aiAvatar: "from-amber-600 to-red-500",
+      userAvatar: "amber-600",
+    },
+    fonts: { heading: "font-bold", body: "font-medium" },
+    aiName: "Trash Beast AI",
+    aiTitle: "Waste Warrior",
+    placeholder: "Ready to turn trash into treasure?",
+    icon: "🗑️",
+    glowEffect: "shadow-amber-400/30",
+  },
+  mystar: {
+    name: "Idol AI",
+    colors: {
+      primary: "pink",
+      secondary: "purple",
+      accent: "white",
+      background: "from-pink-100 via-purple-50/30 to-pink-50",
+      surface: "glass-morphism border-pink-300/50 shadow-purple-300/20",
+      text: "pink-800",
+      aiAvatar: "from-pink-500 to-purple-600",
+      userAvatar: "pink-600",
+    },
+    fonts: { heading: "font-bold", body: "font-medium" },
+    aiName: "Idol AI",
+    aiTitle: "Shining Star",
+    placeholder: "Let's reach for the stars together!",
+    icon: "⭐",
+    glowEffect: "shadow-pink-400/30",
+  },
+  apothecarydiaries: {
+    name: "Apothecary AI",
+    colors: {
+      primary: "emerald",
+      secondary: "teal",
+      accent: "green",
+      background: "from-emerald-100 via-teal-50/30 to-green-50",
+      surface: "glass-morphism border-emerald-300/50 shadow-teal-300/20",
+      text: "emerald-800",
+      aiAvatar: "from-emerald-600 to-teal-600",
+      userAvatar: "emerald-600",
+    },
+    fonts: { heading: "font-bold", body: "font-medium" },
+    aiName: "Apothecary AI",
+    aiTitle: "Medicine Master",
+    placeholder: "What remedy shall we concoct today?",
+    icon: "🧪",
+    glowEffect: "shadow-emerald-400/30",
+  },
+  bungostray: {
+    name: "Dazai AI",
+    colors: {
+      primary: "amber",
+      secondary: "slate",
+      accent: "orange",
+      background: "from-amber-100 via-slate-50/30 to-orange-50",
+      surface: "glass-morphism border-amber-300/50 shadow-slate-200/20",
+      text: "amber-900",
+      aiAvatar: "from-amber-600 to-slate-700",
+      userAvatar: "amber-600",
+    },
+    fonts: { heading: "font-bold", body: "font-medium" },
+    aiName: "Dazai AI",
+    aiTitle: "Armed Detective Agency",
+    placeholder: "Everything is meaningless... but what shall we investigate?",
+    icon: "🕵️",
+    glowEffect: "shadow-amber-400/30",
+  },
+  mobpsycho: {
+    name: "Mob AI",
+    colors: {
+      primary: "purple",
+      secondary: "pink",
+      accent: "violet",
+      background: "from-purple-100 via-pink-50/30 to-violet-50",
+      surface: "glass-morphism border-purple-300/50 shadow-pink-200/20",
+      text: "purple-900",
+      aiAvatar: "from-purple-600 to-pink-700",
+      userAvatar: "purple-600",
+    },
+    fonts: { heading: "font-bold", body: "font-medium" },
+    aiName: "Mob AI",
+    aiTitle: "Psychic Intelligence",
+    placeholder: "100%... What psychic power do you need?",
+    icon: "🧠",
+    glowEffect: "shadow-purple-400/30",
+  },
+  devilmaycry: {
+    name: "Dante AI",
+    colors: {
+      primary: "red",
+      secondary: "gray",
+      accent: "silver",
+      background: "from-red-100 via-gray-50/30 to-slate-50",
+      surface: "glass-morphism border-red-300/50 shadow-gray-200/20",
+      text: "red-900",
+      aiAvatar: "from-red-600 to-gray-700",
+      userAvatar: "red-600",
+    },
+    fonts: { heading: "font-black", body: "font-bold" },
+    aiName: "Dante AI",
+    aiTitle: "Devil Hunter",
+    placeholder: "Let's rock, baby! What demons shall we hunt?",
+    icon: "🗡️",
+    glowEffect: "shadow-red-400/30",
+  },
+  assassinationclassroom: {
+    name: "Koro-sensei AI",
+    colors: {
+      primary: "yellow",
+      secondary: "green",
+      accent: "lime",
+      background: "from-yellow-100 via-green-50/30 to-lime-50",
+      surface: "glass-morphism border-yellow-300/50 shadow-green-200/20",
+      text: "yellow-900",
+      aiAvatar: "from-yellow-600 to-green-700",
+      userAvatar: "yellow-600",
+    },
+    fonts: { heading: "font-bold", body: "font-medium" },
+    aiName: "Koro-sensei AI",
+    aiTitle: "Ultimate Teacher",
+    placeholder: "Nurufufufu! What shall we learn today, my students?",
+    icon: "🎓",
+    glowEffect: "shadow-yellow-400/30",
+  },
+  tokyoghoul: {
+    name: "Ghoul AI",
+    colors: {
+      primary: "red",
+      secondary: "black",
+      accent: "crimson",
+      background: "from-black via-red-950/30 to-gray-900",
+      surface: "glass-morphism border-red-500/50 shadow-black/20 bg-black/40",
+      text: "red-100",
+      aiAvatar: "from-red-600 to-black",
+      userAvatar: "red-700",
+    },
+    fonts: { heading: "font-black", body: "font-bold" },
+    aiName: "Ghoul AI",
+    aiTitle: "Kagune Intelligence",
+    placeholder: "The hunger never ends... What do you seek?",
+    icon: "👁️",
+    glowEffect: "shadow-red-500/40",
+  },
+  bluelock: {
+    name: "Ego AI",
+    colors: {
+      primary: "blue",
+      secondary: "navy",
+      accent: "cyan",
+      background: "from-blue-100 via-navy-50/30 to-cyan-50",
+      surface: "glass-morphism border-blue-300/50 shadow-navy-200/20",
+      text: "blue-900",
+      aiAvatar: "from-blue-600 to-navy-700",
+      userAvatar: "blue-600",
+    },
+    fonts: { heading: "font-black", body: "font-bold" },
+    aiName: "Ego AI",
+    aiTitle: "Striker Intelligence",
+    placeholder: "Become the world's greatest egoist! What's your goal?",
+    icon: "⚽",
+    glowEffect: "shadow-blue-400/30",
+  },
+  cyberpunk: {
+    name: "Netrunner AI",
+    colors: {
+      primary: "cyan",
+      secondary: "magenta",
+      accent: "yellow",
+      background: "from-cyan-100 via-magenta-50/30 to-yellow-50",
+      surface: "glass-morphism border-cyan-300/50 shadow-magenta-200/20",
+      text: "cyan-900",
+      aiAvatar: "from-cyan-600 to-magenta-700",
+      userAvatar: "cyan-600",
+    },
+    fonts: { heading: "font-black", body: "font-bold" },
+    aiName: "Netrunner AI",
+    aiTitle: "Cybernetic Intelligence",
+    placeholder: "Wake the f*ck up, samurai! What data do you need?",
+    icon: "🤖",
+    glowEffect: "shadow-cyan-400/30",
   },
 }
 
@@ -1476,7 +1614,6 @@ export default function AnimeAI() {
       slime: "provider-3/llama-3.3-70b",
       nogamenolife: "provider-3/gpt-4",
       sevendeadlysins: "provider-3/llama-3.3-70b",
-      boruto: "provider-3/llama-3.3-70b",
       friendsgame: "provider-2/qwen-3-235b",
       dungeonmeshi: "provider-3/gpt-4",
       parasyte: "provider-3/deepseek-v3",
@@ -1484,6 +1621,16 @@ export default function AnimeAI() {
       gurrenlagann: "provider-3/llama-3-70b",
       saikik: "provider-3/gpt-4o-mini",
       highschooldxd: "provider-3/gpt-4",
+      gachiakuta: "provider-3/llama-3.3-70b",
+      mystar: "provider-3/gpt-4",
+      apothecarydiaries: "provider-3/deepseek-v3",
+      bungostray: "provider-1/deepseek-r1-0528", // Detective work needs reasoning
+      mobpsycho: "provider-3/gpt-4o-mini", // Simple psychic responses
+      devilmaycry: "provider-3/llama-3.3-70b", // Action-packed responses
+      assassinationclassroom: "provider-3/deepseek-v3", // Teaching needs detailed responses
+      tokyoghoul: "provider-3/llama-3.3-70b", // Dark, intense responses
+      bluelock: "provider-3/gpt-4o-mini", // Quick, competitive responses
+      cyberpunk: "provider-3/deepseek-v3", // Tech-heavy responses
     }
     return themeModelMap[theme] || "provider-3/gpt-4"
   }
@@ -1623,7 +1770,6 @@ export default function AnimeAI() {
     slime: ["Nation building projects", "Monster alliance meetings", "Slime evolution research"],
     nogamenolife: ["Gaming tournaments scheduled", "Strategy guides published", "Sibling coordination studies"],
     sevendeadlysins: ["Holy War approaching", "Sin power awakened", "Sacred treasure located"],
-    boruto: ["Scientific tool upgraded", "Karma seal activated", "New generation mission"],
     friendsgame: ["New game initiated", "Trust level critical", "Psychological trap detected"],
     dungeonmeshi: ["New monster discovered", "Recipe perfected", "Dungeon floor cleared"],
     parasyte: ["Parasitic threat detected", "Human behavior analyzed", "Survival probability updated"],
@@ -1631,6 +1777,24 @@ export default function AnimeAI() {
     gurrenlagann: ["Spiral power rising", "Impossible barrier detected", "Fighting spirit ignited"],
     saikik: ["Psychic disturbance", "Troublesome situation", "Coffee jelly located"],
     highschooldxd: ["Dragon boost ready", "Supernatural threat", "Harem situation developing"],
+    gachiakuta: ["Trash beast awakened", "Waste energy detected", "Scrap metal analyzed"],
+    mystar: ["Stage performance ready", "Fan support rising", "Idol training complete"],
+    apothecarydiaries: ["Poison identified", "Herb mixture ready", "Medical mystery solved"],
+    bungostray: [
+      "Armed Detective Agency on the case",
+      "Mysterious ability users spotted",
+      "Suicide attempts increasing",
+    ],
+    mobpsycho: ["Psychic energy levels rising", "Evil spirits detected", "Reigen's scams exposed"],
+    devilmaycry: ["Demon invasions imminent", "Devil Arms located", "Pizza sales skyrocketing"],
+    assassinationclassroom: [
+      "Assassination attempts ongoing",
+      "Koro-sensei's weaknesses revealed",
+      "Class 3-E's grades improving",
+    ],
+    tokyoghoul: ["Ghoul activity escalating", "CCG investigations intensifying", "Coffee consumption rising"],
+    bluelock: ["Striker selection commencing", "Egoist training intensifying", "Goal-scoring records broken"],
+    cyberpunk: ["Cyberware malfunctions reported", "Netrunner activity surging", "Megacorp conspiracies uncovered"],
   }
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
